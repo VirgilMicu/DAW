@@ -1,0 +1,40 @@
+
+
+
+.sala{
+  --loc: 40px;
+  --loc_mare: 70px;
+  display:grid;
+  grid-template-columns: var(--loc) var(--loc) var(--loc_mare) var(--loc)  var(--loc) var(--loc) var(--loc_mare) var(--loc) var(--loc) var(--loc) ;
+  grid-gap:.4rem; 
+
+}
+
+
+.loc{
+  display: block;
+  
+  border: 3px;
+  border-color: var(--culoare2);
+
+}
+
+.loc>label{
+  display: inline-flex;
+  background-color: var(--culoare1);
+  border-radius: 5px;
+  font-weight: bold;
+  color:var(--culoare5);
+  width: var(--loc);
+  height: 30px;
+  justify-content: center;
+  align-items: center  ;
+  padding-right: 2px;
+}
+
+.loc:has(.check-loc:checked) > label {
+  background-color: rgb(154, 113, 113);
+}
+.loc:has(.check-loc:checked) >label  {
+  color: var(--culoare1);
+}

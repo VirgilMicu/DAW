@@ -1,0 +1,132 @@
+
+#sigla{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+
+header{
+    margin-top:20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--culoare0);
+    padding: 15;
+    font-family: "Limelight", sans-serif;
+}
+
+#titlu{
+    font-size: 4em;
+    /* line-height: .5em; */
+    font-family: "Limelight", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#subtitlu{
+    margin: 0px;
+}
+
+.firma{
+    color: var(--culoare7);
+    margin-bottom: 10px;
+}
+
+#attr{
+    /* text-align: right; */
+ font-size: small;
+ margin: 0px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  height: 0px;
+  z-index: 10;
+} 
+
+main{
+    display: block;
+    background-color: var(--culoare0);
+    padding: 10px;
+    border-radius: var(--rotunjire);
+    padding-bottom: 50px;
+}
+
+.form_centrat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    color: var(--culoare0);
+    background-color: var(--culoare5);
+    padding: 1px;
+    margin: 0px;
+    font-family: "Limelight", sans-serif;
+    height: 2.5rem;
+    align-items: center;  
+    justify-content: center;
+}
+
+#ft{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#banner{
+    margin:7px;
+    text-align: center;
+}
+
+#page-container {
+    position: relative;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#grid-pagina{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "urmatoare urmatoare urmatoare meteo "
+
+} 
+
+
+/* --------------------------------------------------------  tabel ------------------------ */
+
+
+table {
+    border-collapse:collapse;
+    margin: 2px;
+  }
+
+/* -------------------------------------------------- link top ------*/
+
+#link-top{
+  position:fixed;
+  bottom:.7em;
+  left:.7em;
+  width:4rem;
+  height:4rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 3rem;
+  line-height:4.8rem;
+  text-align:center;
+  box-shadow: 0px 0px 30px var(--culoare2) inset;
+  border-radius:50%;
+  background: var(--culoare1);
+  color: var(--culoare4);
+  align-content: center;
+}
+
+

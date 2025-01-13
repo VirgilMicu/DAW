@@ -1,0 +1,82 @@
+deco#acasa {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+}
+
+
+.meniu {
+  display: flex;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: var(--culoare8);
+  padding-left: 1vw;
+  justify-content: left;
+}
+.meniu a, .meniu div {
+  text-decoration: none;
+  color: var(--culoare1);
+  display: block;
+  height: 100%;
+}
+
+.meniu a {
+  cursor: pointer;
+}
+
+
+
+.meniu li {
+  background-color: var(--culoare8);
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+}
+.meniu ul {
+  position: relative;
+  z-index: 10;
+  list-style-type: none;
+  /* transition: 1s; */
+  display: none;
+  padding-left: 0;
+}
+
+#dr {
+  margin-left: auto;
+  width:auto;
+  margin-right: 15px;
+}
+
+
+.meniu > li > a::after { /* --------------------------------bara subtire sub meniul principal  */
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  transform: scaleX(0);
+  background-image: linear-gradient(to right, var(--culoare8), var(--culoare1));
+}
+.meniu > li:hover > ul { /* -----------------------------afisare submeniu cu animatie  */
+  display: block;
+}
+
+
+.meniu > li > ul > li {
+  background-color: var(--culoare7);
+}
+
+.meniu > li > ul > li:hover * {
+  background-color: var(--culoare5);
+  /* color: var(--culoare6); */
+}
+
+.meniu > li > ul > li:hover #nou {
+  color: var(--culoare8);
+  background-color: transparent;
+  text-shadow: 0px 0px 5px var(--culoare8);
+}
+
+

@@ -1,0 +1,57 @@
+
+#pag-prod{
+  display:grid;
+  grid-template-columns: 70% 30%;
+  grid-gap:.4rem;
+  align-items: start;
+}
+
+
+#lista-prod{
+  display: block;
+  font-size: .9rem;
+  height: max(65vh,600px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#lista{
+  display: block;
+  font-size: .9rem;
+  height: 95%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.elem-lista{
+  display:grid;
+  grid-template-columns: 25% 65% 10%;
+  grid-gap:.4rem;
+  padding: 5px;
+  border-bottom: 3px solid var(--culoare5);
+}
+
+.Inactiva{
+  background-color: var(--culoare1);
+}
+.Arhivata{
+  background-color: var(--culoare3);;
+}
+
+.inp-prod{
+  width: 100%;
+}
+
+input[type='text'], textarea {
+  width: 100%;
+}
+
+
+textarea{
+resize: vertical;
+}
+
+#productii {
+  width: 95%;
+}

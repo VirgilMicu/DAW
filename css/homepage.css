@@ -1,0 +1,43 @@
+
+#grid-pagina{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "urmatoare urmatoare urmatoare meteo "
+
+} 
+
+#grid-pagina>*{
+    /* outline: 1px solid var(--culoare3);  */
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+
+#urmatoare{
+    grid-area: urmatoare;
+}
+#meteo{
+   grid-area: meteo;
+}
+
+.next-item{
+    display:grid;
+    grid-template-columns: 12% 30% 55%;
+    grid-gap:.4rem;
+    padding: 5px;
+    background-color: var(--culoare1);
+    margin-bottom: 5px;
+  }
+
+  .next-titlu, .next-data {
+    font-weight: bold;
+  }
+  
+
+  .next-dr {
+    font-size:small;
+  }
+
+  #meteo{
+    width: 300px;
+
+  }

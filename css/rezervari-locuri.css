@@ -1,0 +1,109 @@
+
+
+#pag-rezl{
+  display:grid;
+  grid-template-columns: 35% 65%;
+  grid-gap:.4rem;
+  align-items: start;
+}
+
+#descriere{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:100%
+}
+
+#lista-spec{
+  display: block;
+  font-size: .9rem;
+
+}
+
+#lista{
+  display:grid;
+  --sp_spec: 14%;
+  grid-template-columns: var(--sp_spec) var(--sp_spec) var(--sp_spec) var(--sp_spec) var(--sp_spec) var(--sp_spec) var(--sp_spec) ; 
+  height: 65vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.elem-lista-jos-rez {
+  display:flex;
+  justify-content: center ;
+}
+
+
+
+.inp-prod{
+  width: 100%;
+}
+
+input[type='text'], textarea {
+  width: 100%;
+}
+
+
+
+
+
+/* -------------------------------------------------------- */
+
+.sala{
+  --loc: 61px;
+  --loc_mare: 80px;
+  display:grid;
+  grid-template-columns: var(--loc) var(--loc) var(--loc_mare) var(--loc)  var(--loc) var(--loc) var(--loc_mare) var(--loc) var(--loc) var(--loc) ;
+  grid-gap:.4rem; 
+  justify-content: center;
+}
+
+.loc{
+  display: block;
+  border: 3px;
+  border-color: var(--culoare2);
+}
+
+
+.loc>label{
+  cursor:pointer;
+}
+
+.loc>label, .rezervat>label, .rezervat-user>label{
+  display: inline-flex;
+  background-color: var(--culoare1);
+  border-radius: 5px;
+  font-weight: bold;
+  color:var(--culoare5);
+  width: var(--loc);
+  height: 30px;
+  justify-content: center;
+  align-items: center  ;
+  padding-right: 2px;
+}
+
+.rezervat>label  {
+  background-color: var(--culoare4);
+  color:var(--culoare2);
+  font-weight: normal;
+}
+
+.rezervat-user>label  {
+  background-color: lightskyblue;
+  color:var(--culoare4);
+  font-weight: normal;
+}
+.loc:has(.check-loc:checked) > label, .rezervat:has(.check-loc:checked) > label  {
+  background-color: rgb(204, 120, 120);
+    color: var(--culoare1);
+}
+
+#atentie {
+  width: 70%;
+  justify-self: center;
+  text-align: justify;
+  text-justify: inter-word;
+
+}

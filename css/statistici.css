@@ -1,0 +1,80 @@
+
+#pag-spec{
+  display:grid;
+  grid-template-columns: 80% 20%;
+  grid-gap:.4rem;
+  align-items: start;
+}
+
+
+.stdr {
+  font-size: 1rem;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.astdr{
+  border: 1px solid var(--culoare2);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--culoare8);
+}
+
+#lista-spec{
+  display: block;
+  font-size: .9rem;
+}
+
+
+
+
+.inp-prod{
+  width: 100%;
+}
+
+input[type='text'], textarea {
+  width: 100%;
+}
+
+
+textarea{
+resize: vertical;
+}
+
+
+
+.tableFixHead  {
+  overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+  height: 65vh; /* gives an initial height of 200px to the table */
+}
+.tableFixHead thead th {
+  position: sticky; /* make the table heads sticky */
+  top: 0px; /* table head will be placed from the top of the table and sticks to it */
+  top: -1px;
+}
+table {
+  border-collapse: collapse; /* make the table borders collapse to each other */
+  /* width: 100%; */
+  table-layout: fixed;
+}
+
+thead {
+  border: 1px solid var(--culoare3);
+
+}
+
+td {
+  padding: 0px 0px;  
+  padding-left: 5px ;
+  padding-right: 5px;
+  border: 1px solid var(--culoare3);
+}
+
+th {
+  padding: 3px ; 
+  background:var(--culoare2);
+  border: 1px solid var(--culoare3);
+  z-index: 5;
+}
+

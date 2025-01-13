@@ -1,0 +1,59 @@
+
+
+
+#pag-rez{
+  display:grid;
+  grid-template-columns: 80% 18%;
+  grid-gap:2%;
+  align-items: start;
+}
+
+#lista-rez{
+  display: block;
+  font-size: 1rem;
+  height: calc(100vh - 300px);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#rezervari{
+  display: block;
+  font-size: 1rem;
+  height: calc(100vh - 360px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.next-item{
+    display:grid;
+    grid-template-columns: 10% 12% 45% 20% 4%;
+    grid-gap:2%;
+    padding: 5px;
+    border:1px solid  var(--culoare3);
+    margin-bottom: 5px;
+  }
+
+  .next-item:hover {
+    background-color: var(--culoare1);
+  }
+  .next-titlu, .next-data {
+    font-weight: bold;
+  }
+  
+  .next-print {
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--culoare8);
+  }
+
+
+  .next-dr {
+    font-size:small;
+  }
+
+  #meteo{
+    width: 300px;
+
+  }
