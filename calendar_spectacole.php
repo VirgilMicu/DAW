@@ -60,7 +60,7 @@ $prima_zi = (jddayofweek (gregoriantojd($luna,1,$an)) + 6 ) % 7 + 1;
 $zile_sapt = array ('Luni', 'Marti', 'Miercuri', 'Joi', 'Vineri', 'Sambata', 'Duminica');
 
 
-//---------------------------logarea accesarilor - problema e ca logheaza de oricate ori reincarci 
+//---------------------------logarea accesarilor 
 log_accesare($db, $_SERVER['REQUEST_URI'], (isset($_SESSION['id_user'])?$_SESSION['id_user']:0), $_SERVER['REMOTE_ADDR']);
 require('fragmente/head.php'); 
 require('fragmente/nav.php');
