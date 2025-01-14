@@ -162,7 +162,7 @@ if ($pop) {
 		<span style="display: flex; justify-self: center;">Pentru a rezerva bilete trebuie sa va&nbsp;<a href="rezervare_locuri.php?login" >logati</a></span>
 			<?php }  ?>
 		<div class="form_centrat" style="color: red">  <p> <?php if ($mesaj=='') {echo '<br>';} else {echo $mesaj;} ?></p> </div> 
-		<div id="atentie" ><small>ATENTIE! Situatia locurilor disponibile este cea de la momentul incarcarii paginii. Este posibil ca in momentul trimiterii cererii de rezervare unele locuri sa fi fost deja rezervate de alti utilizatori. In aceasta situatie nu se va rezerva niciunul din locurile selectate in cerere. Veti putea face o noua selectie in functie de situatia actualizata. </small></div>
+		<div id="atentie" ><small>Situatia locurilor disponibile este cea de la momentul incarcarii paginii. Este posibil ca in momentul trimiterii cererii de rezervare unele locuri sa fi fost deja rezervate de alti utilizatori. In aceasta situatie nu se va rezerva niciunul din locurile selectate in cerere. Veti putea face o noua selectie in functie de situatia actualizata. </small></div>
 
 </form>
 
